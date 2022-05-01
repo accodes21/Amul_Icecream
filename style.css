@@ -11,7 +11,7 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,10 @@ header{
     align-items: center;
     background-color:aliceblue;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, .3);
+}
+
+header .logo{
+    width:110px;
 }
 
 header ul{
@@ -143,4 +147,34 @@ header ul li a{
     height: 100%;
     background: burlywood;
     clip-path: circle(600px at right 875px);
+}
+
+@media screen and (max-width:950px) {
+    header{
+        padding: 15px 40px;
+    }
+    
+    header .logo{
+        width:80px;
+    }
+    
+    header ul{
+        display: none;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .text{
+        max-width: 100%;
+    }
+    .content .text h1{
+        font-size: 2.5em;
+    }
 }
